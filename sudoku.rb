@@ -50,6 +50,8 @@ class SudokuGame
     board.render
     pos = get_pos
     val = get_val
+    # seems fine until we assign new value to position?
+    # not sure why when we go into position, it becomes nil
     board[pos] = val
   end
 
