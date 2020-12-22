@@ -1,7 +1,7 @@
 require_relative "board"
 require 'colorize'
 
-puts "Only contractors write code this bad.".yellow
+# puts "Only contractors write code this bad.".yellow
 
 class SudokuGame
   def self.from_file(filename)
@@ -39,6 +39,14 @@ class SudokuGame
       end
     end
     pos
+  end
+
+  def parse_pos(string)
+    string.split(",").map { |char| Integer(char) }
+  end
+
+  def parse_val(string)
+    Integer(string)
   end
 
   def get_val
