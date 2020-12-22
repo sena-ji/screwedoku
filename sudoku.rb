@@ -1,7 +1,7 @@
 require_relative "board"
 require 'colorize'
 
-puts "Only contractors write code this bad.".yellow
+# puts "Only contractors write code this bad.".yellow
 
 class SudokuGame
   def self.from_file(filename)
